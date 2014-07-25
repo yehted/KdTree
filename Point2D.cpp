@@ -17,19 +17,19 @@ double Point2D::x() const { return x_; }
 
 double Point2D::y() const { return y_; }
 
-double Point2D::distanceTo(const Point2D& that) {
+double Point2D::distanceTo(const Point2D& that) const {
 	double dx = x_ - that.x_;
 	double dy = y_ - that.y_;
 	return sqrt(dx*dx + dy*dy);
 }
 
-double Point2D::distanceSquaredTo(const Point2D& that) {
+double Point2D::distanceSquaredTo(const Point2D& that) const {
 	double dx = x_ - that.x_;
 	double dy = y_ - that.y_;
 	return (dx*dx + dy*dy);
 }
 
-bool Point2D::operator<(const Point2D& that) {
+bool Point2D::operator<(const Point2D& that) const {
 	if (y_ < that.y_) return true;
 	if (y_ > that.y_) return false;
 	if (x_ < that.x_) return true;

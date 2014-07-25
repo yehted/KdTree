@@ -13,7 +13,7 @@ double RectHV::ymin() { return ymin_; }
 double RectHV::xmax() { return xmax_; }
 double RectHV::ymax() { return ymax_; }
 
-bool RectHV::contains(const Point2D& p) {
+bool RectHV::contains(const Point2D& p) const {
 	return (p.x() >= xmin_) && (p.x() <= xmax_)
 		&& (p.y() >= ymin_) && (p.y() <= ymax_);
 }

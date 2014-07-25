@@ -12,9 +12,9 @@ public:
 	Point2D(double x, double y);
 	double x() const;
 	double y() const;
-	double distanceTo(const Point2D& that);
-	double distanceSquaredTo(const Point2D& that);
-	bool operator<(const Point2D& that);
+	double distanceTo(const Point2D& that) const;
+	double distanceSquaredTo(const Point2D& that) const;
+	bool operator<(const Point2D& that) const;
 	bool operator==(const Point2D& that);
 	friend std::ostream& operator<<(std::ostream& output, const Point2D& that);
 	void draw();

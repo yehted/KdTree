@@ -14,7 +14,7 @@ public:
 	double ymin();
 	double xmax();
 	double ymax();
-	bool contains(const Point2D& p);
+	bool contains(const Point2D& p) const;
 	bool intersects(const RectHV& p);
 	double distanceTo(const Point2D& p);
 	double distanceSquaredTo(const Point2D& p);
