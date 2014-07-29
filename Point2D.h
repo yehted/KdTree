@@ -3,6 +3,8 @@
 *
 *
 ******************************************************/
+#ifndef POINT2D_H
+#define POINT2D_H
 
 #include <iostream>
 
@@ -23,3 +25,4 @@ private:
 	double x_;
 	double y_;
 };
+#endif // !POINT2D_H

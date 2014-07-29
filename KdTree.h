@@ -1,6 +1,5 @@
 #include "RectHV.h"
 #include "Deque.h"
-#include <set>
 
 class KdTree {
 public:

@@ -3,6 +3,8 @@
 * Dependencies: Point2D.h
 *
 **************************************************/
+#ifndef RECTHV_H
+#define RECTHV_H
 
 #include "Point2D.h"
 
@@ -25,3 +27,4 @@ private:
 	const double xmin_, ymin_;
 	const double xmax_, ymax_;
 };
+#endif // !RECTHV_H
