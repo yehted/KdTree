@@ -8,10 +8,10 @@ xmin_(xmin), ymin_(ymin), xmax_(xmax), ymax_(ymax) {
 		throw std::invalid_argument("Invalid rectangle");
 }
 
-double RectHV::xmin() { return xmin_; }
-double RectHV::ymin() { return ymin_; }
-double RectHV::xmax() { return xmax_; }
-double RectHV::ymax() { return ymax_; }
+double RectHV::xmin() const { return xmin_; }
+double RectHV::ymin() const { return ymin_; }
+double RectHV::xmax() const { return xmax_; }
+double RectHV::ymax() const { return ymax_; }
 
 bool RectHV::contains(const Point2D& p) const {
 	return (p.x() >= xmin_) && (p.x() <= xmax_)

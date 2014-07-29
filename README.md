@@ -6,3 +6,6 @@
 
 ## Things to do ##
 * Maybe implement drawing library
+
+## Things I've learned ##
+* A unresolved external symbol error usually means that I've declared a function, but haven't defined it yet.

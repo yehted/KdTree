@@ -37,7 +37,7 @@ bool Point2D::operator<(const Point2D& that) const {
 	return false;
 }
 
-bool Point2D::operator==(const Point2D& that) {
+bool Point2D::operator==(const Point2D& that) const {
 	if (&that == this) return true;
 	if (&that == NULL) return false;
 	return (x_ == that.x_ && y_ == that.y_);

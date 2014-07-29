@@ -10,10 +10,10 @@ class RectHV {
 public:
 	RectHV();
 	RectHV(double xmin, double ymin, double xmax, double ymax);
-	double xmin();
-	double ymin();
-	double xmax();
-	double ymax();
+	double xmin() const;
+	double ymin() const;
+	double xmax() const;
+	double ymax() const;
 	bool contains(const Point2D& p) const;
 	bool intersects(const RectHV& p);
 	double distanceTo(const Point2D& p);

@@ -15,7 +15,7 @@ public:
 	double distanceTo(const Point2D& that) const;
 	double distanceSquaredTo(const Point2D& that) const;
 	bool operator<(const Point2D& that) const;
-	bool operator==(const Point2D& that);
+	bool operator==(const Point2D& that) const;
 	friend std::ostream& operator<<(std::ostream& output, const Point2D& that);
 	void draw();
 
