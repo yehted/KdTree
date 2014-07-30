@@ -28,8 +28,8 @@ int main(int argc, char* argv[]) {
 	cout << "Size of brute: " << brute.size() << endl;
 	cout << "Size of KdTree: " << kdtree.size() << endl;
 
-	RectHV rect(0.2, 0.2, 0.8, 0.5);
-	Point2D p(0.1, 0.1);
+	RectHV rect(0.0, 0.0, 0.4, 0.4);
+	Point2D p(0.3, 0.25);
 
 	cout << "Rectangle: " << rect << endl;
 	cout << "Point: " << p << endl;
